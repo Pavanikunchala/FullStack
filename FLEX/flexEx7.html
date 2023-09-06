@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>css flex box</title>
+
+	<style type="text/css">
+.container{
+   display: inline-block;
+   position: absolute;
+   left: 40%;
+}
+body{
+   background-color: bisque;
+}
+	.child{
+		width: 50px;
+		height:50px;
+      border: 1px solid black;
+	} 
+.parent1{
+   width:300px;
+   height:65px;
+   display: flex;
+   flex-flow:row  ;
+   justify-content: flex-start;
+   background-color:yellow;
+   border: 2px solid black;
+   gap:10px; padding: 5px;
+}
+.parent2{
+   width:300px;
+   height:65px; padding: 5px;
+   display: flex;
+   flex-flow:row  ;
+   justify-content: flex-end;
+   align-content: space-around;
+   background-color:yellow;
+   border: 2px solid black;
+   gap:10px;
+
+}
+.parent3{
+   width:300px;
+   height:65px;
+   display: flex;
+   flex-flow:row  ;
+   justify-content: center;
+   background-color:yellow;
+   border: 2px solid black;
+    gap:10px; padding: 5px;
+}
+.parent4{
+   width:300px;
+   height:65px;
+   display: flex;
+   flex-flow:row  ;
+   justify-content:space-between ;
+   background-color:yellow;
+   border: 2px solid black;
+    gap:10px; padding: 5px;
+}
+.parent5{
+   width:300px;
+   height:65px;
+   display: flex;
+   flex-flow:row  ;
+   justify-content:space-around;
+   background-color:yellow;
+   border: 2px solid black;
+    padding: 5px;
+}
+.parent6{
+   width:300px;
+   height:65px;
+   display: flex;
+   flex-flow:row  ;
+   justify-content:space-evenly;
+   background-color:yellow;
+   border: 2px solid black;
+     padding: 5px;
+}
+ #c4{
+   background-color: pink;
+ }
+ #c2{
+   background-color: pink;
+ }
+ #c3{
+   background-color: pink;
+ }
+ h3{
+   color: violet;
+ }
+.parent1 > div:nth-child(odd) {
+  width: 20%;
+  }
+.parent1 > div:nth-child(even) {
+  width: 10%;
+  }
+.parent2 > div:nth-child(odd) {
+  width: 20%;
+  }
+.parent2 > div:nth-child(even) {
+  width: 10%;
+  }
+.parent3 > div:nth-child(odd) {
+  width: 20%;
+  }
+.parent3 > div:nth-child(even) {
+  width: 10%;
+  }
+.parent4 > div:nth-child(odd) {
+  width: 20%;
+  }
+.parent4 > div:nth-child(even) {
+  width: 10%;
+  }
+.parent5 > div:nth-child(odd) {
+  width: 20%;
+  }
+.parent5 > div:nth-child(even) {
+  width: 10%;
+  }
+.parent6 > div:nth-child(odd) {
+  width: 20%;
+  }
+.parent6 > div:nth-child(even) {
+  width: 10%;
+  }
+
+	</style>
+ 
+
+</head>
+
+<body>
+<h1>justify-content</h1>
+
+<div class="container">
+<h3>flex-start </h3>
+<div class="parent1">
+<div id="c4" class="child"></div>	
+<div id="c2" class="child"></div>
+<div id="c3" class="child"> </div>
+</div>
+
+<h3>flex-end </h3>
+<div class="parent2">
+<div id="c4" class="child"></div>   
+<div id="c2" class="child"></div>
+<div id="c3" class="child"> </div>
+</div>
+
+<h3>center </h3>
+<div class="parent3">
+<div id="c4" class="child"></div>   
+<div id="c2" class="child"></div>
+<div id="c3" class="child"> </div>
+</div>
+<h3>space-between </h3>
+<div class="parent4">
+<div id="c4" class="child"></div>   
+<div id="c2" class="child"></div>
+<div id="c3" class="child"> </div>
+</div>
+<h3>space-around </h3>
+<div class="parent5">
+<div id="c4" class="child"></div>   
+<div id="c2" class="child"></div>
+<div id="c3" class="child"> </div>
+</div>
+<h3>space-evenly </h3>
+<div class="parent6">
+<div id="c4" class="child"></div>   
+<div id="c2" class="child"></div>
+<div id="c3" class="child"> </div>
+</div>
+</div>
+</body>
+</html>

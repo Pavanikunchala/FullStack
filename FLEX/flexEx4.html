@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.container{
+			background-color: gray;
+			 padding:10px; 
+		}
+		.yellow{
+            padding:30px;
+            background-color: yellow;
+            margin:10px;
+		}
+		.row1,.row2,.row3{
+			display: flex;
+		}
+		.row11{
+			flex-grow: 1;
+		}
+		.row12{
+			flex-grow:3;
+		}
+		.row25{
+			flex-grow: 2;
+		}
+		.row21,.row22,.row23,.row24{
+			flex-grow: 1;
+		}
+		.row31{
+			flex-grow: 2;
+		}
+		.row32{
+			flex-grow: 3;
+		}
+		.row33{
+			flex-grow: 1;
+		}
+		.row31,.row32,.row33{
+			padding:50px;
+		}
+	</style>
+</head>
+<body>
+   <div class="container">
+   	<div class="row1">
+   		<div class="row11 yellow"></div>
+   		<div class="row12 yellow"></div>
+   </div>
+   <div class="row2">
+   		<div class="row21 yellow"></div>
+   		<div class="row22 yellow"></div>
+   		<div class="row23 yellow"></div>
+   		<div class="row24 yellow"></div>
+   		<div class="row25 yellow"></div>
+   </div>
+   <div class="row3">
+   	   <div class="row31 yellow"></div>
+   	    <div class="row32 yellow"></div>
+   	     <div class="row33 yellow"></div>
+   </div>
+</div>
+</body>
+</html>

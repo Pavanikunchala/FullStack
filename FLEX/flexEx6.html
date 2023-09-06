@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.container{
+			background: gray;
+			padding:10px;
+		}
+		.yellow{
+			padding:20px;
+			background-color: yellow;
+			margin:20px;
+		}
+		.row1,.row11,.row111,.row112,.row113{
+			display:flex;
+		}
+		.row11{
+			flex-grow: 4;
+		 }
+		 .row12{
+			flex-grow: 1;
+		 }
+		 .row1111{
+			flex-grow: 3;
+		 }
+		 .row1112{
+			flex-grow: 1;
+		 }
+		 
+	</style>
+		
+		
+</head>
+<body>
+      <div class="container">
+      	<div class="row1">
+         <div class="row11">
+         	<div class="row111">
+         		<div class="row1111 yellow"></div>
+         		<div class="row1112">
+         			<div class="row11121 yellow"></div>
+         			<div class="row11122 yellow"></div>
+         		</div>
+         		<div class="row112">
+         			<div class="row1121 yellow"></div>
+         			<div class="row1122 yellow"></div>
+         		</div>
+         		<div class="row113">
+         			<div class="row1131 yellow"></div>
+         			<div class="row1132 yellow"></div>
+         			<div class="row1132 yellow"></div>
+         		</div>
+         	</div>
+         </div>
+         <div class="row12 yellow"></div>
+      </div>
+</body>
+</html>
